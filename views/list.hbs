@@ -1,0 +1,17 @@
+<section>
+    <div class="container mt-5">
+<div class="list-group">
+    {{#each products}}
+  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">{{name}}</h5>
+      <small>3 days ago</small>
+    </div>
+    <p class="mb-1">{{this.Price}}</p>
+    <p class="mb-1">{{this.category}}</p>
+    <img style="width:50px;height:50px" src="{{Image}}">
+  </a>
+  {{/each}}
+</div>
+</div>
+</section>
